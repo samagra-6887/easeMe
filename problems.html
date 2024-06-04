@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Problems</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">easeMe<span>.</span></a>
+      <ul class="menu-links">
+        <span id="close-menu-btn" class="material-icons">close</span>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="platform.html">Coding Platforms</a></li>
+        <li><a href="problems.html">Problem Reviews</a></li>
+        <li><a href="algorithm.html">Algorithms</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <span id="menu-btn" class="material-icons">menu</span>
+    </nav>
+  </header>
+
+  <section class="hero-section">
+    <div class="content">
+      <h1>Review Your Problems with help and support Community Services.</h1>
+      <p> </p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <a href="index.html" class="logo">easeMe<span>.</span></a>
+      </div>
+      <ul class="footer-menu">
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="platform.html">Coding Platforms</a></li>
+        <li><a href="problems.html">Problem Review</a></li>
+        <li><a href="algorithm.html">Algorithms</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy;2024 Samagra Singh | All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.querySelector("header");
+    const menuBtn = document.querySelector("#menu-btn");
+    const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+    menuBtn.addEventListener("click", () => {
+      header.classList.add("show-mobile-menu");
+    });
+
+    closeMenuBtn.addEventListener("click", () => {
+      header.classList.remove("show-mobile-menu");
+    });
+  </script>
+</body>
+</html>

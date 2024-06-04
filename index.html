@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>easeMe</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Fonts for Alegreya -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts for Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="logo">easeMe<span>.</span></a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-icons">close</span>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="#coding-platforms">Coding Platforms</a></li>
+          <li><a href="#problem-reviews">Problem Reviews</a></li>
+          <li><a href="#algorithms">Algorithms</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <span id="menu-btn" class="material-icons">menu</span>
+      </nav>
+    </header>
+
+    <section class="hero-section">
+      <div class="content">
+        <h1>Start your new Journey of Coding with easeMe</h1>
+        <p>
+          Welcome to easeMe, your coding companion! Track progress from multiple
+          platforms, enjoy real-time monitoring, visualize success with graphs,
+          and switch coding environments seamlessly. Learn algorithms and
+          optimize your code. Join easeMe today and elevate your coding journey!
+        </p>
+        <button>Start the Journey</button>
+      </div>
+    </section>
+
+    <section class="hero-section">
+      <div class="content">
+        <h1>Motive of easeMe for the users</h1>
+        <p>
+          At easeMe, our goal is to simplify and enhance your coding journey. We
+          aim to provide a unified platform where coders can track their
+          progress, monitor their achievements in real-time, and continuously
+          improve their skills. By consolidating data from various coding
+          platforms and offering insightful analytics, easeMe empowers users to
+          stay motivated and achieve their coding goals.
+        </p>
+
+        <div class="content1">
+          <h1>Approach of easeMe</h1>
+          <p>
+            easeMe leverages seamless integration with popular coding platforms
+            to gather and display your coding activities in one place. Our
+            intuitive interface provides real-time monitoring and detailed
+            progress graphs, helping you visualize your growth over time. With
+            features like platform switching, problem review reminders, and
+            algorithm knowledge resources, easeMe supports continuous learning
+            and improvement. Additionally, our code complexity analysis tool
+            helps you write more efficient and optimized code, ensuring that you
+            not only solve problems but do so effectively. Join easeMe to
+            streamline your coding journey and achieve your full potential.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <a href="index.html" class="logo">easeMe<span>.</span></a>
+        </div>
+        <ul class="footer-menu">
+          <li><a href="profile">Profile</a></li>
+          <li><a href="platform.html">Coding Platforms</a></li>
+          <li><a href="problems.html">Problem Review</a></li>
+          <li><a href="algorithm.html">Algorithms</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy;2024 Samagra Singh | All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <!-- Mobile hamburger script -->
+    <script>
+      const header = document.querySelector("header");
+      const menuBtn = document.querySelector("#menu-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      menuBtn.addEventListener("click", () => {
+        header.classList.add("show-mobile-menu");
+      });
+
+      closeMenuBtn.addEventListener("click", () => {
+        header.classList.remove("show-mobile-menu");
+      });
+    </script>
+  </body>
+</html>

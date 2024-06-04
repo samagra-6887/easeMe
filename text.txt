@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>easeME</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Fonts for Alegreya -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap">
+
+    <!-- Google Fonts for Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="#" class="logo">easeMe<span>.</span></a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-icons">close</span>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">StudyMe</a></li>
+          <li><a href="#">Others</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <span id="menu-btn" class="material-icons">menu</span>
+      </nav>
+    </header>
+
+    <section class="hero-section">
+      <div class="content">
+        <h1>Start your coding journey in a New way.</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
+          reiciendis architecto laboriosam eaque qui doloremque ipsa
+          necessitatibus quae fuga aliquam fugiat? Modi corrupti corporis
+          impedit expedita velit, omnis dolorem natus.
+        </p>
+        <button>Start Journey</button>
+      </div>
+    </section>
+
+    <!-- Mobile hamburger script -->
+    <script>
+      const header = document.querySelector("header");
+      const menuBtn = document.querySelector("#menu-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      menuBtn.addEventListener("click", () => {
+        header.classList.add("show-mobile-menu");
+      });
+
+      closeMenuBtn.addEventListener("click", () => {
+        header.classList.remove("show-mobile-menu");
+      });
+    </script>
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="profile" class="section">
+        <h1>User Profile</h1>
+        <div class="profile-content">
+            <!-- User data and graphs will go here -->
+            <p>User's coding progress and graphs will be displayed here.</p>
+        </div>
+    </section>
+
+    <section id="coding-platforms" class="section">
+        <h1>Coding Platforms</h1>
+        <div class="platform-content">
+            <!-- Links to coding platforms will go here -->
+            <p>Switch to your favorite coding platforms from here.</p>
+        </div>
+    </section>
+
+    <section id="problem-reviews" class="section">
+        <h1>Problem Reviews</h1>
+        <div class="review-content">
+            <!-- Problem reviews will go here -->
+            <p>Review problems you have solved here.</p>
+        </div>
+    </section>
+
+    <section id="algorithms" class="section">
+        <h1>Algorithms</h1>
+        <div class="algorithm-content">
+            <!-- Algorithm knowledge and complexity analysis will go here -->
+            <p>Learn about algorithms and their complexities.</p>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Alegreya", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  padding-top: 80px; /* Adjust based on header height */
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8); /* Adding background to header for readability */
+}
+
+header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.navbar a {
+  color: aliceblue;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.navbar a:hover {
+  color: skyblue;
+}
+
+.navbar .logo {
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: aliceblue;
+}
+
+.navbar .logo span {
+  color: lightskyblue;
+}
+
+.navbar .menu-links {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  transition: left 0.3s ease;
+}
+
+.navbar .menu-links li {
+  list-style-type: none;
+}
+
+.hero-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.hero-section .content {
+  color: lightblue;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero-section .content h1 {
+  font-size: 3rem;
+  max-width: 600px;
+}
+
+.hero-section .content p {
+  font-weight: 300;
+  margin-top: 15px;
+  max-width: 600px;
+}
+
+.hero-section .content button {
+  background: aliceblue;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 38px;
+  padding: 12px 30px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.hero-section .content button:hover {
+  background: lightblue;
+}
+
+#menu-btn {
+  color: aliceblue;
+  cursor: pointer;
+  display: none;
+}
+
+#close-menu-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.show-mobile-menu .menu-links {
+  left: 0 !important;
+}
+
+@media screen and (max-width: 900px) {
+  header{
+    padding: 10px 20px;
+  }
+  header.show-mobile-menu::before{
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+  }
+  #close-menu-btn, #menu-btn {
+    display: block;
+  }
+
+  .navbar .menu-links {
+    position: fixed;
+    left: -260px;
+    top: 0;
+    flex-direction: column;
+    width: 260px;
+    height: 100vh;
+    background: white;
+    padding: 70px 40px 0;
+    transition: left 0.15s ease;
+  }
+
+  .navbar a {
+    color: black;
+  }
+
+  #close-menu-btn {
+    display: block;
+  }
+
+  .hero-section .content{
+    text-align: center;
+  }
+  .hero-section .content :is(h1, p){
+    max-width: 100%;
+  }
+  .hero-section .content h1{
+    font-size: 2.3rem;
+    line-height: 60px;
+  }
+
+  .hero-section .content button{
+    padding: 9px 18px;
+  }
+}
