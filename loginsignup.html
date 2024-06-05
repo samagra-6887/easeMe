@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login / Signup</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="logo">easeMe<span>.</span></a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-icons">close</span>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="platform.html">Coding Platforms</a></li>
+          <li><a href="problems.html">Problem Reviews</a></li>
+          <li><a href="algorithm.html">Algorithms</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <span id="menu-btn" class="material-icons">menu</span>
+      </nav>
+    </header>
+
+    <section class="hero-sign">
+      <div class="container" id="container">
+        
+        <div class="form-container signin">
+            <form>
+              <h1>Sign In</h1>
+              <div class="social-icons">
+                <a href="#" class="icon"
+                  ><i class="fa-brands fa-google-plus-g"></i
+                ></a>
+                <a href="#" class="icon"
+                  ><i class="fa-brands fa-x-twitter"></i
+                ></a>
+                <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="icon"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+              </div>
+              <span>or use your email password</span>
+              <input type="email" placeholder="Email" />
+              <input type="password" placeholder="Password" />
+              <a href="#">Forget Your Password?</a>
+              <button>Sign In</button>
+            </form>
+          </div>
+        
+        <div class="form-container signup">
+          <form>
+            <h1>Create Account</h1>
+            <div class="social-icons">
+              <a href="#" class="icon"
+                ><i class="fa-brands fa-google-plus-g"></i
+              ></a>
+              <a href="#" class="icon"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+              <a href="#" class="icon"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+            <span>or use your email for registeration</span>
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+            <button>Sign Up</button>
+          </form>
+        </div>
+        
+        <div class="toggle-container">
+          <div class="toggle">
+            <div class="toggle-panel toggle-left">
+              <h1>Welcome Back!</h1>
+              <p>Please enter your personal details to use the easeMe features</p>
+              <button class="hidden" id="login">Sign In</button>
+            </div>
+            <div class="toggle-panel toggle-right">
+              <h1>Hello, User!</h1>
+              <p>
+                Please register with your personal details
+              </p>
+              <button class="hidden" id="register">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <a href="index.html" class="logo">easeMe<span>.</span></a>
+        </div>
+        <ul class="footer-menu">
+          <li><a href="profile">Profile</a></li>
+          <li><a href="platform.html">Coding Platforms</a></li>
+          <li><a href="problems.html">Problem Review</a></li>
+          <li><a href="algorithm.html">Algorithms</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy;2024 Samagra Singh | All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script>
+      const container = document.getElementById("container");
+      const registerBtn = document.getElementById("register");
+      const loginBtn = document.getElementById("login");
+
+      registerBtn.addEventListener("click", () => {
+        container.classList.add("active");
+      });
+
+      loginBtn.addEventListener("click", () => {
+        container.classList.remove("active");
+      });
+    </script>
+  </body>
+</html>
